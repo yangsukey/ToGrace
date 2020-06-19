@@ -1,0 +1,7 @@
+//Homework4
+
+select u.username as 使用者姓名 ,u.title as 使用者職稱 ,d.name as 部門名稱 ,c.name as 公司名稱
+from user u
+left join department d on u.department_id=d.department_id
+left join company c on d.company_id=c.company_id;
+
